@@ -1,6 +1,13 @@
 # docker-libreplan
 
-## Run a libreplan docker container
+## Run a libreplan container using the default script
+ - The script requires you to set the lp_host_port variable:<br/>
+    lp_host_port=\<your_port\> ./start-container.sh
+
+ - You can also specify the database and libreplan container names.<br/>
+   Use lp_db_name and lp_name variables for that respectively.
+
+## Run a libreplan docker container manually
 
  - First, fire up a postgres database.<br/>
     docker run -dP --name db postgres
