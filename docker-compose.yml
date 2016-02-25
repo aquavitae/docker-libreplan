@@ -3,7 +3,7 @@
 libreplan:
   build: .
   links:
-    db: db
+    - db
   ports: ["8888:8080"]
 
 db:
